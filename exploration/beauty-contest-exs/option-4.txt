@@ -1,0 +1,21 @@
+#{$var :function option=value}
+Hello {$var}
+
+#{$var :function option=value}
+#$foo = {$bar :function option=value}
+Hello {$var}, you have a {$foo}
+
+?? {$foo} {$bar}
+::[ foo bar] Hello {$foo} you have a {$var}
+::[ *     *] {$foo} hello you have a {$var}
+
+?? {$foo :function option=value} {$bar :function option=value}
+::[a b] {{  {$foo} is {$bar}  }}
+::[x y] {{  {$foo} is {$bar}  }}
+::[* *] {|  |}{$foo} is {$bar}{|  |}
+
+#{$var :function option=value}#$foo = {$bar :function option=value}Hello {$var}, you have a {$foo}
+
+??{$foo}{$bar}::[foo bar] Hello {$foo} you have a {$var}::[* *] {$foo} hello you have a {$var}
+
+??{$foo :function option=value}{$bar :function option=value}::[a b] {  {$foo} is {$bar}  }::[x y] {  {$foo} is {$bar}  }::[* *] {|  |}{$foo} is {$bar}{|  |}

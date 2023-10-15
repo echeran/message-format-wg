@@ -1,0 +1,19 @@
+{# input $var :function option=value}
+Hello {$var}
+
+{# input $var :function option=value
+   local $foo = {$bar :function option=value}
+}
+Hello {$var}, you have a {$foo}
+
+#match {$foo :function option=value} {$bar :function option=value}
+[a b] {$foo} is {$bar}
+[x y] {$foo} is {$bar}
+[* *] {$foo} is {$bar}
+
+{#input $foo :function option=value
+local $baz = {|some annotation|}}
+#match {$foo} {$bar :function}
+[a b] {$foo} is {$bar}
+[x y] {$foo} is {$bar}
+[* *] {$foo} is {$bar}
