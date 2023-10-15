@@ -1,9 +1,7 @@
-{#
-  input {$var :function option=value}
-}
-Hello {$var}
+Hello world!
 
-// might be more natural as:
+Hello {$user}
+
 {#input {$var :function option=value}}
 Hello {$var}
 
@@ -27,8 +25,6 @@ Hello {$var}, you have a {$foo}
   [x y] {{  {$foo} is {$bar}  }}
   [* *] {|  |}{$foo} is {$bar}{|  |}
 }
-
-{#input {$var :function option=value}}Hello {$var}
 
 {#input {$var :function option=value} local $foo = {$bar :function option=value}}Hello {$var}, you have a {$foo}
 
