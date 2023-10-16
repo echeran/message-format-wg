@@ -1,0 +1,15 @@
+find . -name "option*txt" | sort | ruby -lane 'file=$_; brace_count_cmd="cat #{file} | tr -d -c \"{}\" | wc -c"; brace_count=`#{brace_count_cmd}`.strip!; puts "  #{brace_count} #{file}";'
+
+  108 ./option-0.txt
+  130 ./option-1a.txt
+  182 ./option-1b.txt
+  130 ./option-1.txt
+  132 ./option-2a.txt
+  134 ./option-2.txt
+  122 ./option-3a.txt
+  92 ./option-3b.txt
+  102 ./option-3.txt
+  98 ./option-4.txt
+  104 ./option-5a.txt
+  120 ./option-5.txt
+  94 ./option-6.txt

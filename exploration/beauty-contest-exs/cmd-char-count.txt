@@ -1,0 +1,15 @@
+wc -c option*.txt
+
+  851 option-0.txt
+  903 option-1a.txt
+ 1065 option-1b.txt
+  877 option-1.txt
+  907 option-2a.txt
+  821 option-2.txt
+  892 option-3a.txt
+  860 option-3b.txt
+  898 option-3.txt
+  801 option-4.txt
+  916 option-5a.txt
+  949 option-5.txt
+  893 option-6.txt
