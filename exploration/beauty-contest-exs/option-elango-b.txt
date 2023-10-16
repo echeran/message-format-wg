@@ -1,0 +1,34 @@
+Hello world!
+
+Hello {$user}
+
+{#
+:input {$var :function option=value}
+{Hello {$var}}
+#}
+
+{#
+:input {$var :function option=value}
+:local $foo = {$bar :function option=value}
+{Hello {$var}, you have a {$foo}}
+#}
+
+
+{#
+[{$foo} {$bar}]
+[foo bar] {Hello {$foo} you have a {$var}}
+[* *] {{$foo} hello you have a {$var}}
+#}
+
+{#
+[{$foo :function option=value} {$bar :function option=value}]
+[a b] {  {$foo} is {$bar}  }
+[x y] {  {$foo} is {$bar}  }
+[* *] {  {$foo} is {$bar}  }
+#}
+
+{#:input {$var :function option=value} :local $foo = {$bar :function option=value}{Hello {$var}, you have a {$foo}}#}
+
+{#[{$foo} {$bar}] [foo bar] {Hello {$foo} you have a {$var}} [* *] {{$foo} hello you have a {$var}}#}
+
+{#[{$foo :function option=value} {$bar :function option=value}][a b] {  {$foo} is {$bar}  }[x y] {  {$foo} is {$bar}  }[* *] {  {$foo} is {$bar}  }#}

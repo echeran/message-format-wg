@@ -13,3 +13,5 @@ find . -name "option*txt" | sort | ruby -lane 'file=$_; brace_count_cmd="cat #{f
   104 ./option-5a.txt
   120 ./option-5.txt
   94 ./option-6.txt
+  122 ./option-elango-a.txt
+  118 ./option-elango-b.txt

@@ -13,3 +13,5 @@ wc -c option*.txt
   916 option-5a.txt
   949 option-5.txt
   893 option-6.txt
+  846 option-elango-a.txt
+  843 option-elango-b.txt
